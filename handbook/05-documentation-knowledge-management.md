@@ -98,6 +98,23 @@ The hierarchy follows this general structure:
 
 Each layer provides increasing implementation detail while avoiding unnecessary duplication.
 
+Engineering Handbook
+        │
+        ▼
+Project README
+        │
+        ▼
+Architecture Decision Records
+        │
+        ▼
+Project Journals
+        │
+        ▼
+Technical Documentation
+        │
+        ▼
+Source Code
+
 ---
 
 # Project README Standards
