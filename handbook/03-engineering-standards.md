@@ -26,6 +26,26 @@ Each stage produces information that informs the next.
 
 Skipping earlier stages often creates unnecessary complexity later.
 
+Understand
+      │
+      ▼
+Design
+      │
+      ▼
+Document
+      │
+      ▼
+Build
+      │
+      ▼
+Verify
+      │
+      ▼
+Reflect
+      │
+      ▼
+Improve
+
 ---
 
 ## Stage 1 — Understand
