@@ -311,6 +311,20 @@ Key lessons include:
 
 ---
 
+# Engineering Decisions That Changed
+
+This section records decisions that significantly redirected the project.
+
+Examples:
+
+* Switching from Kadence to Divi
+* Choosing WordPress instead of a custom framework
+* Centering the website on engineering thinking rather than marketing
+* Creating the Engineering Handbook
+* Moving documentation into GitHub
+
+---
+
 # Future Roadmap
 
 Planned enhancements include:
