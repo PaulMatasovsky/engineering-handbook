@@ -207,3 +207,24 @@ The projects described throughout this handbook are not intended to demonstrate 
 Instead, they demonstrate the consistent application of a small set of engineering principles across different problems and technologies.
 
 While tools will continue to evolve, I expect these principles to remain the foundation of how I approach engineering throughout my career.
+
+---
+
+## Chapter Information
+
+**Version**
+
+1.0.0
+
+**Status**
+
+Draft
+
+---
+
+## Revision History
+
+| Version | Description |
+|----------|-------------|
+| 1.0.0 | Initial chapter |
+
