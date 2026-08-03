@@ -10,6 +10,30 @@ Rather than focusing solely on implementing technology, this project emphasizes 
 
 It serves as the primary demonstration of my engineering philosophy in practice.
 
+# Problem Statement
+
+Organizations depend on accurate inventory data to make purchasing, warehousing, production, and reporting decisions.
+
+In practice, inventory information often originates from multiple spreadsheets, inconsistent formats, varying naming conventions, and incomplete data.
+
+Without a reliable process for validating and standardizing that information, downstream systems become increasingly difficult to trust.
+
+This project explores how thoughtful engineering, Domain-Driven Design, and Quality Assurance can transform inconsistent inventory data into reliable business information.
+
+---
+
+# Why This Problem Matters
+
+The technical challenge of transforming spreadsheet data is relatively straightforward.
+
+The more significant challenge is understanding the business rules that determine whether the transformed data is actually correct.
+
+A technically successful ETL process can still produce poor business outcomes if it misunderstands inventory workflows, warehouse operations, or domain terminology.
+
+This project therefore emphasizes business understanding before implementation.
+
+Its primary objective is not simply to transform data, but to demonstrate how engineering decisions become stronger when they are informed by domain knowledge, documentation, and quality-focused design.
+
 ---
 
 # Project Snapshot
