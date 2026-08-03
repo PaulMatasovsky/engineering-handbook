@@ -1,0 +1,198 @@
+# Chapter 06 — Case Study: Personal Portfolio Website
+
+## Overview
+
+The Personal Portfolio Website is the first major engineering project documented in this handbook.
+
+While its outward purpose is to present professional work, the project serves a much broader role. It functions as a practical demonstration of the engineering philosophy, documentation standards, and quality-focused development process described throughout the earlier chapters of this handbook.
+
+Rather than treating the website as a marketing exercise, I approached it as an engineering project whose primary objective is to communicate how I think, solve problems, and continuously improve.
+
+---
+
+# Project Purpose
+
+The website exists to answer a question that a résumé alone cannot:
+
+> **How do I approach engineering?**
+
+Instead of presenting only completed work, the website documents:
+
+* ongoing projects,
+* technical decisions,
+* lessons learned,
+* engineering philosophy,
+* and professional growth.
+
+The goal is not simply to showcase finished software, but to provide evidence of thoughtful engineering.
+
+---
+
+# Design Philosophy
+
+The website was designed around the Japanese concept of **Shibumi**.
+
+Rather than emphasizing visual complexity, the design focuses on:
+
+* clarity,
+* simplicity,
+* restraint,
+* thoughtful organization,
+* and purposeful content.
+
+Every design decision should support the user's understanding rather than compete for attention.
+
+Features are added only when they improve communication or usability.
+
+---
+
+# Engineering Objectives
+
+The project was designed to demonstrate several professional competencies simultaneously:
+
+* Software engineering
+* Documentation
+* User experience
+* Quality Assurance
+* Version control
+* Continuous improvement
+* AI-assisted development
+
+The website therefore serves as both a portfolio and an engineering artifact.
+
+---
+
+# Technology Stack
+
+The current implementation is based on:
+
+* WordPress
+* Divi
+* GitHub
+* Markdown documentation
+* Fluent Forms
+* Supporting WordPress plugins where they provide clear value
+
+Technology choices were guided by practicality rather than novelty.
+
+Rather than building a custom framework solely to demonstrate technical complexity, I selected tools that allow more time to be invested in engineering, documentation, and portfolio projects.
+
+This reflects an important principle throughout this handbook:
+
+> The objective is to solve the right problem, not the most complicated one.
+
+---
+
+# Information Architecture
+
+The website is intentionally organized around a small number of focused sections.
+
+Core navigation includes:
+
+* Home
+* Projects
+* QA Toolkit
+* Insights
+* Contact
+
+Additional functionality should only be introduced when it improves the visitor's understanding of the work.
+
+The structure favors discoverability over feature density.
+
+---
+
+# Documentation Strategy
+
+The website is supported by documentation both within GitHub and throughout this Engineering Handbook.
+
+Important design decisions are preserved rather than relying solely on implementation.
+
+Examples include:
+
+* project journals,
+* Architecture Decision Records,
+* repository documentation,
+* roadmap planning,
+* and engineering standards.
+
+The website is therefore treated as one component within a larger engineering ecosystem rather than an isolated project.
+
+---
+
+# Quality Assurance Strategy
+
+The website itself serves as the first subject of my own Quality Assurance process.
+
+Rather than assuming the implementation is complete once the site functions correctly, the project includes plans for:
+
+* smoke testing,
+* regression testing,
+* usability evaluation,
+* accessibility review,
+* responsive design verification,
+* cross-browser testing,
+* and ongoing refinement.
+
+Testing is incorporated as part of development rather than reserved for the final stages.
+
+---
+
+# AI Collaboration
+
+Artificial Intelligence has been used throughout the planning and development of the website.
+
+AI contributes by assisting with:
+
+* brainstorming,
+* documentation,
+* design discussion,
+* technical research,
+* wording refinement,
+* architecture review,
+* and identifying opportunities for improvement.
+
+Final design decisions remain human decisions.
+
+AI functions as a collaborative engineering partner rather than an autonomous designer.
+
+---
+
+# Continuous Evolution
+
+The website is intentionally designed to evolve.
+
+Planned enhancements include:
+
+* expanding technical project documentation,
+* additional engineering case studies,
+* deeper Quality Assurance content,
+* an interactive inventory management demonstration,
+* and an AI-powered assistant capable of discussing my projects using the documentation maintained throughout this handbook and the associated repositories.
+
+The objective is for the website to mature alongside my engineering career.
+
+---
+
+# Lessons Learned
+
+Developing the portfolio reinforced several important engineering principles:
+
+* Simplicity requires deliberate design.
+* Documentation improves implementation.
+* Small iterative improvements outperform infrequent large redesigns.
+* Good engineering is communicated through reasoning as much as through code.
+* AI is most valuable when used to improve understanding rather than replace it.
+
+These lessons continue to influence later projects documented throughout this handbook.
+
+---
+
+# Relationship to the Handbook
+
+The Personal Portfolio Website demonstrates the practical application of the principles established in the earlier chapters of this handbook.
+
+It represents the first complete example of my engineering philosophy expressed through a real software project.
+
+As additional projects are completed, they will build upon the same standards while expanding both technical complexity and professional capability.
+
+The website therefore serves as the foundation of a broader portfolio that emphasizes thoughtful engineering, documentation, and continuous learning rather than isolated technical demonstrations.
