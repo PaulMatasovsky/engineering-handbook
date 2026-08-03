@@ -10,6 +10,28 @@ Rather than treating the website as a marketing exercise, I approached it as a c
 
 The website serves as both a professional portfolio and the first practical demonstration of the engineering philosophy described throughout this handbook.
 
+# Problem Statement
+
+A traditional résumé communicates experience, but it provides very little insight into how an engineer approaches problems.
+
+Many technical portfolios emphasize technologies, completed projects, or visual design while overlooking the reasoning that guided those decisions.
+
+I wanted to create a portfolio that demonstrates engineering thinking rather than simply displaying technical artifacts.
+
+The challenge was designing a website that communicates not only what I have built, but how I approach engineering, documentation, quality assurance, and continuous improvement.
+
+---
+
+# Why This Problem Matters
+
+Software engineering is ultimately about solving problems thoughtfully.
+
+Hiring managers are not simply evaluating whether someone can write code; they are evaluating how that person approaches unfamiliar problems, communicates technical decisions, and continues improving over time.
+
+A portfolio that explains engineering reasoning provides a much clearer picture of long-term potential than one that merely lists technologies or screenshots.
+
+For that reason, the website became an engineering communication project rather than a marketing website.
+
 ---
 
 # Project Snapshot
