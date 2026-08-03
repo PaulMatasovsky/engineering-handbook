@@ -50,7 +50,7 @@ For that reason, the website became an engineering communication project rather 
 
 ---
 
-# Background
+# Project Evolution
 
 The project began with a simple question:
 
