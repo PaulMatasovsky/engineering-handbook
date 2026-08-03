@@ -186,6 +186,19 @@ It connects visitors to:
 
 The website introduces projects while GitHub contains implementation details.
 
+Engineering Handbook
+        │
+        ├────────────┐
+        │            │
+        ▼            ▼
+Portfolio Repo    QA Toolkit
+        │
+        ▼
+Blog / Insights
+        │
+        ▼
+Visitors
+
 ---
 
 # Key Design Decisions
