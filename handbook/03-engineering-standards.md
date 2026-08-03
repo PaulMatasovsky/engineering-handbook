@@ -262,3 +262,24 @@ Consistency is important.
 Blind adherence to outdated standards is not.
 
 Engineering standards should mature alongside engineering experience.
+
+---
+
+## Chapter Information
+
+**Version**
+
+1.0.0
+
+**Status**
+
+Draft
+
+---
+
+## Revision History
+
+| Version | Description |
+|----------|-------------|
+| 1.0.0 | Initial chapter |
+
