@@ -268,3 +268,23 @@ It is the purpose of maintaining this handbook.
 Software engineering is a discipline of continuous learning.
 
 This playbook exists to ensure that every project contributes not only to better software, but also to becoming a better engineer.
+
+---
+
+## Chapter Information
+
+**Version**
+
+1.0.0
+
+**Status**
+
+Draft
+
+---
+
+## Revision History
+
+| Version | Description |
+|----------|-------------|
+| 1.0.0 | Initial chapter |
