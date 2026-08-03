@@ -173,30 +173,24 @@ Future improvements will be guided by documented requirements rather than featur
 
 The planned architecture separates responsibilities into distinct layers.
 
-Input
-
-↓
-
-ETL
-
-↓
-
+Vendor Files
+      │
+      ▼
+ETL Pipeline
+      │
+      ▼
 Validation
-
-↓
-
+      │
+      ▼
 SQLite Database
-
-↓
-
-Application Layer
-
-↓
-
+      │
+      ▼
+Business Logic
+      │
+      ▼
 Reporting
-
-↓
-
+      │
+      ▼
 User Interface
 
 This separation improves maintainability while allowing each component to evolve independently.
