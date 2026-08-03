@@ -154,3 +154,23 @@ If the answer to those questions is yes, the project has achieved its purpose.
 The following chapters describe the philosophies, standards, and projects that put these principles into practice.
 
 Together they represent not only the software I have built, but the engineer I continue striving to become.
+
+---
+
+## Chapter Information
+
+**Version**
+
+1.0.0
+
+**Status**
+
+Draft
+
+---
+
+## Revision History
+
+| Version | Description |
+|----------|-------------|
+| 1.0.0 | Initial chapter |
