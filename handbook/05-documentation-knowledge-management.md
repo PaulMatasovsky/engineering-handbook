@@ -265,3 +265,23 @@ Thoughtful documentation improves communication, reduces uncertainty, preserves 
 The objective is not simply to record what was built.
 
 The objective is to preserve understanding.
+
+---
+
+## Chapter Information
+
+**Version**
+
+1.0.0
+
+**Status**
+
+Draft
+
+---
+
+## Revision History
+
+| Version | Description |
+|----------|-------------|
+| 1.0.0 | Initial chapter |
