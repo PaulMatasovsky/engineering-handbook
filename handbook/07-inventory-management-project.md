@@ -303,6 +303,42 @@ The project reinforced several important ideas:
 
 ---
 
+# Engineering Decisions That Changed
+
+This section records decisions that significantly redirected the project.
+
+Examples:
+
+* Switching from Kadence to Divi
+* Choosing WordPress instead of a custom framework
+* Centering the website on engineering thinking rather than marketing
+* Creating the Engineering Handbook
+* Moving documentation into GitHub
+
+Original Spreadsheet
+
+↓
+
+Portfolio ETL
+
+↓
+
+Inventory Domain
+
+↓
+
+DDD
+
+↓
+
+SQLite
+
+↓
+
+Interactive Demo
+
+---
+
 # Future Roadmap
 
 Planned enhancements include:
