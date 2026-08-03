@@ -51,7 +51,7 @@ Its primary objective is not simply to transform data, but to demonstrate how en
 
 ---
 
-# Background
+# Project Evolution
 
 This project began as a practical spreadsheet automation workflow created to solve repetitive data-processing tasks.
 
