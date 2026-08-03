@@ -363,3 +363,24 @@ The website will continue evolving alongside my professional career.
 * README
 * Future Test Plan
 * Future Test Cases
+
+---
+
+## Chapter Information
+
+**Version**
+
+1.0.0
+
+**Status**
+
+Draft
+
+---
+
+## Revision History
+
+| Version | Description |
+|----------|-------------|
+| 1.0.0 | Initial chapter |
+
