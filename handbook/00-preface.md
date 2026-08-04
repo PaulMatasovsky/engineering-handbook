@@ -1,173 +1,141 @@
-# Chapter 00 — Preface
+Chapter 00 — Preface
 
-## Purpose
+Purpose
 
-This Engineering Handbook serves as the central reference for my professional engineering practices, technical standards, project philosophy, and ongoing development.
+This Engineering Handbook is where I keep everything that defines how I work as an engineer. It's not your typical portfolio or résumé. Instead, it lays out the thinking, choices, and reasoning that shape my approach. You won't just see what I've built—you'll get a look at why I built it that way.
 
-Rather than functioning as a traditional portfolio or résumé, this handbook documents the principles, reasoning, and decision-making processes that guide my work. It captures not only the technical solutions I build, but also the thought process behind them.
+I see this handbook as a living record—something I’ll keep updating through my career. It helps me track how I’ve grown and makes sure my standards and thought process stay consistent, no matter which project I’m tackling.
 
-The handbook is intended to evolve throughout my career as both a record of professional growth and a source of consistency across projects.
+Intended Audience
 
----
+I wrote this handbook for a handful of different readers:
 
-## Intended Audience
+- Future Me: So I don’t lose track of my decisions, what I’ve learned, or the principles I stand by.
+- Collaborators: To give real context on how I tackle software engineering and quality.
+- Hiring Managers and Recruiters: To show what’s behind the projects, not just the polished results.
+- Technical Interviewers: To let you peek into my problem-solving, my way of weighing options, and how I explain my thinking.
+- AI Collaborators: To lay down the rules, language, and style that should guide future work with AI tools.
 
-This handbook is written for several audiences:
+Whoever picks this up should walk away knowing not just what I do, but how and why I do it.
 
-* **Future Me** — to preserve decisions, lessons learned, and engineering principles over time.
-* **Collaborators** — to provide context for how I approach software engineering and quality assurance.
-* **Hiring Managers and Recruiters** — to demonstrate my engineering mindset beyond completed projects.
-* **Technical Interviewers** — to understand how I analyze problems, evaluate tradeoffs, and communicate technical decisions.
-* **AI Collaborators** — to establish the standards, terminology, and working style that should guide future AI-assisted engineering work.
+How to Use This Handbook
 
-Each audience should be able to understand not only what I build, but how and why I approach engineering the way I do.
+I’ve organized the handbook by chapters, starting with big-picture principles and working my way toward nuts-and-bolts implementation.
 
----
+- To get my approach, read the first chapters. 
+- To see how I put those ideas to work, jump to the project sections.
+- For the bigger technical debates, check the Architecture Decision Records (ADRs).
+- If you want to follow how my ideas and skills have shifted, browse the Learning Journal.
 
-## How to Use This Handbook
+This handbook isn’t a replacement for project documentation—it’s here to add the “why” and keep things tied together.
 
-The handbook is organized into chapters that progress from foundational principles to practical implementation.
+Scope
 
-Earlier chapters establish the philosophy and standards that inform the projects documented later.
+This handbook covers the principles and standards that steer my engineering work.
 
-When referencing this handbook:
+My focus is on:
 
-* Read the early chapters to understand the guiding principles.
-* Use project chapters to understand implementation details and project-specific decisions.
-* Refer to Architecture Decision Records (ADRs) for significant technical decisions.
-* Review the Learning Journal to understand how ideas have evolved over time.
+- Engineering philosophy
+- Quality Assurance practices
+- Documentation standards
+- Technical decision-making
+- Portfolio structure
+- Professional growth
+- Working with AI
+- Lessons learned
 
-This handbook is intended to complement—not replace—individual project documentation.
+It’s not meant to be:
 
----
+- A full-on programming manual
+- A giant stack of tutorials
+- A substitute for detailed project docs
+- A dump for private or sensitive info
+- An exhaustive log of every choice I’ve made
 
-## Scope
+Each project still needs its own documentation for the details, but this handbook is the thread that ties my whole approach together.
 
-This handbook documents the principles and standards that guide my engineering work.
+Guiding Statement
 
-It intentionally focuses on:
+To put it simply, my core principles are:
 
-* Engineering philosophy
-* Quality Assurance practices
-* Documentation standards
-* Technical decision-making
-* Portfolio architecture
-* Professional development
-* AI collaboration
-* Lessons learned
+Build thoughtfully.
+Document deliberately.
+Test intelligently.
+Keep learning.
 
-It does **not** attempt to serve as:
+Everything in this handbook comes back to those ideas.
 
-* A complete programming reference
-* A collection of software tutorials
-* A replacement for project-specific documentation
-* A repository of confidential or proprietary information
-* A comprehensive archive of every engineering decision
+Document Conventions
 
-Individual projects should contain implementation details specific to those systems, while this handbook remains the authoritative source for the broader principles that connect them.
+To keep things straight and easy to follow, I’ve set a few ground rules.
 
----
+Documentation
 
-## Guiding Statement
+- Markdown is the go-to format.
+- Always explain why—not just what—when documenting decisions.
+- Major architectural choices get written up as ADRs.
+- Big project moments get logged in project journals.
 
-The central purpose of this handbook can be summarized simply:
+Naming
 
-> **Build thoughtfully.**
-> **Document deliberately.**
-> **Test intelligently.**
-> **Keep learning.**
+- Repo names use lower case with hyphens.
+- Documents get clear, plain-English titles.
+- I try to keep terminology consistent across repos whenever possible.
 
-These principles influence every project, document, and technical decision described throughout this handbook.
+Dates
 
----
+Dates stick to ISO 8601: YYYY-MM-DD. It sorts cleanly and everyone knows what day I mean.
 
-## Document Conventions
+Versioning
 
-To maintain consistency, the following conventions are used throughout the handbook.
+I follow semantic versioning here:
 
-### Documentation
+- Major versions mean big structural or philosophy changes.
+- Minor versions add new chapters or major updates.
+- Patches tidy up clarity, layout, or minor edits—no big content shifts.
 
-* Markdown is the canonical documentation format.
-* Documentation should explain *why* decisions were made, not only *what* was implemented.
-* Significant architectural decisions should be recorded using Architecture Decision Records (ADRs).
-* Major project milestones should be documented through project journals.
+Relationship to Other Repositories
 
-### Naming
+This handbook is the anchor for all my engineering work.
 
-* Repository names use lowercase letters with hyphens.
-* Documents use descriptive, human-readable titles.
-* Terminology should remain consistent across repositories whenever practical.
+Each repo covers its own project details, but this is where the core rules and standards live. Projects should point back to this handbook rather than copying the rules into every repo.
 
-### Dates
+A few examples of related repos:
 
-Dates use the ISO 8601 standard:
+- My portfolio website
+- A toolkit for quality assurance
+- Inventory management apps
+- Future projects still on the drawing board
 
-`YYYY-MM-DD`
+That way, everything stays consistent, but each project can stay focused.
 
-This format sorts naturally and avoids regional ambiguity.
+Living Document
 
-### Versioning
+Engineering means always learning and adapting, so this handbook is meant to grow and change too.
 
-The handbook follows semantic versioning principles:
+Content will shift as I:
 
-* Major versions reflect significant structural or philosophical changes.
-* Minor versions introduce new chapters or substantially expand existing ones.
-* Patch versions improve clarity, organization, or accuracy without materially changing the underlying content.
+- Pick up new tech
+- Tweak my habits and routines
+- Learn from past projects
+- Find even better methods
 
----
+Old decisions don’t get deleted just because I moved on. I update them with context so you can see how—and why—I changed my mind.
 
-## Relationship to Other Repositories
+The goal isn’t a perfect record, but a thoughtful one.
 
-This repository serves as the central reference for my engineering work.
+Professional Philosophy
 
-Individual repositories document specific implementations, while this handbook documents the principles and standards that connect them.
+This handbook reflects my core belief: engineering is so much more than just writing code.
 
-Where practical, projects should reference this handbook rather than duplicating shared guidance.
+To build something great, you have to understand the problem first, make your decisions out in the open, and keep sharpening both your skills and your judgment as you go.
 
-Examples of related repositories include:
+Quality isn’t just about testing after you build. It comes from solid planning, clear communication, thoughtful design, disciplined execution, and always looking for ways to improve.
 
-* Portfolio website
-* Quality Assurance toolkit
-* Inventory management project
-* Future engineering projects
+This handbook tries to capture all of that.
 
-This approach encourages consistency while allowing each repository to remain focused on its own implementation.
+Looking Ahead
 
----
+The chapters that follow lay out my standards, showcase the projects I’ve worked on, and share what I’ve learned along the way.
 
-## Living Document
-
-Engineering is a continuous learning process, and this handbook reflects that philosophy.
-
-The content is expected to evolve as:
-
-* New technologies are adopted.
-* Existing practices are refined.
-* Lessons are learned from completed projects.
-* Better approaches are discovered.
-
-Earlier decisions are not removed simply because they change. When appropriate, they are revised with additional context so that the evolution of the underlying reasoning remains understandable.
-
-The objective is not to preserve perfection, but to preserve thoughtful engineering.
-
----
-
-## Professional Philosophy
-
-This handbook is built on the belief that software engineering extends beyond writing code.
-
-Successful engineering requires understanding problems before solving them, documenting decisions alongside implementations, and continually refining both technical skills and professional judgment.
-
-Quality is not produced by testing alone.
-
-It is the result of thoughtful planning, clear communication, deliberate design, disciplined implementation, and continuous improvement.
-
-This handbook exists to document that process.
-
----
-
-## Looking Ahead
-
-The chapters that follow describe the principles, standards, projects, and lessons that have shaped my development as an engineer.
-
-Together they form a living record of how I approach software engineering today, while leaving room for that approach to mature through future experience, collaboration, and continued learning.
+Together, they add up to a living record of where I am as an engineer right now—and leave space for me to grow, experiment, and adapt long into the future.
