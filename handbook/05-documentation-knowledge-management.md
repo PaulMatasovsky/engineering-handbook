@@ -1,93 +1,58 @@
-# Chapter 05 — Documentation & Knowledge Management
+Chapter 05 — Documentation & Knowledge Management
 
-## Overview
+Overview
 
-Documentation is a fundamental engineering artifact.
+Documentation isn’t just an afterthought—it’s at the heart of good engineering.
 
-It records the reasoning behind decisions, preserves knowledge that source code alone cannot communicate, and provides continuity as projects evolve.
+It’s how you capture the “why” behind your choices, keep track of lessons source code alone can’t teach, and make sure nothing gets lost as your project grows and changes.
 
-The goal of documentation is not to produce more pages. The goal is to create information that remains useful to future readers, whether they are collaborators, hiring managers, AI assistants, or my future self.
+You’re not trying to write a stack of pages nobody will ever read. The real aim is to carve out information that actually helps someone—maybe your teammates, a new hire, an AI helper, or even you, months down the line.
 
-Throughout this handbook, documentation is treated as an integral part of engineering rather than a task performed after implementation.
+Throughout this handbook, you’ll see documentation treated as a natural part of engineering, not just something you tack on at the end.
 
----
+Why Documentation Matters
 
-# Why Documentation Matters
+Software shifts. People move on. Memory slips. Documentation steps in to keep things from falling through the cracks.
 
-Software changes.
+Great documentation saves context that would otherwise vanish. It should make it easy to answer questions like:
 
-People change.
+Why does this project matter?
+What’s the core problem it solves?
+What assumptions did we go in with?
+How did we settle on this approach?
+What other options did we weigh?
+How should the next person keep building on this?
+At the end of the day, it’s about cutting down confusion and making things easier to maintain.
 
-Memory fades.
+Documentation Principles
 
-Good documentation preserves context that would otherwise be lost.
+Keep these in mind for every document:
 
-Well-maintained documentation should answer questions such as:
+Accurate
 
-* Why does this project exist?
-* What problem is it solving?
-* What assumptions were made?
-* Why was this design selected?
-* What alternatives were considered?
-* How should future work continue?
+Docs should match reality. If things change, update the docs—or at least make it clear what’s outdated.
 
-The objective is to reduce ambiguity while improving maintainability.
+Purposeful
 
----
+Don’t write documentation just for the sake of it. If something’s no longer useful, clean it up, combine it, or get rid of it.
 
-# Documentation Principles
+Clear
 
-Every document should strive to be:
+Aim for clarity over showing off your technical chops. Whoever reads this should get it, no matter their background. Keep jargon in check.
 
-### Accurate
+Maintainable
 
-Documentation should reflect the current state of the project.
+Your docs should grow with your project. They need to be easy to update as things evolve.
 
-Outdated documentation should be updated or clearly marked as historical.
+Connected
 
----
+Link to related info, don’t copy-paste it everywhere. Every document should have its own clear role.
 
-### Purposeful
+Documentation Hierarchy
 
-Every document should exist for a specific reason.
+The Engineering Handbook sits at the top. Underneath that, you have project repositories with more detailed info. Then, supporting docs drill down even further.
 
-If a document no longer provides value, it should be revised, consolidated, or removed.
-
----
-
-### Clear
-
-Documentation should prioritize understanding over technical complexity.
-
-The intended audience should be able to follow the reasoning without unnecessary jargon.
-
----
-
-### Maintainable
-
-Documentation should evolve alongside the project.
-
-It should be practical to update as requirements, architecture, and implementation change.
-
----
-
-### Connected
-
-Documentation should reference related materials rather than duplicate information.
-
-Each document should have a clearly defined responsibility.
-
----
-
-# Documentation Hierarchy
-
-The Engineering Handbook serves as the highest level of documentation.
-
-Project repositories provide implementation-specific information.
-
-Supporting documents capture detailed technical decisions.
-
-The hierarchy follows this general structure:
+Think of it like this:
 
 1. Engineering Handbook
 2. Project README
@@ -96,192 +61,117 @@ The hierarchy follows this general structure:
 5. Technical Documentation
 6. Source Code Comments
 
-Each layer provides increasing implementation detail while avoiding unnecessary duplication.
+Digging deeper down the list gives you more detail, but you don’t want to repeat yourself between layers.
 
-Engineering Handbook
-        │
-        ▼
-Project README
-        │
-        ▼
-Architecture Decision Records
-        │
-        ▼
+Project README Standards
+
+Every repo should start with a README that covers the basics:
+
+What is this project?
+Why does it exist?
+Who’s supposed to use it?
+What tech stack is involved?
+How’s everything organized?
+How does someone get started?
+The README is the front door—make it welcoming and clear.
+
+Architecture Decision Records (ADRs)
+
+When you make big engineering choices, document them with ADRs.
+
+Each record should get into:
+
+Context
+Decision
+Alternatives you thought about
+Why you picked this route
+What the consequences are
+ADRs aren’t about just writing down what happened. They explain how you thought through the problem. Even if someone disagrees later, they’ll understand where you were coming from.
+
 Project Journals
-        │
-        ▼
-Technical Documentation
-        │
-        ▼
-Source Code
 
----
+While ADRs tackle specific decisions, project journals log the story of your project as it unfolds.
 
-# Project README Standards
+Here’s what you might write about:
 
-Every repository should include a README that answers several fundamental questions:
+Major milestones
+Big design pivots
+Things you learned
+Surprises along the way
+Changing your assumptions
+Ideas you want to chase next
+Journals help you hold onto the history you’d otherwise forget.
 
-* What is this project?
-* Why does it exist?
-* Who is the intended audience?
-* What technologies are used?
-* How is the project organized?
-* How can someone begin using or understanding it?
+Templates
 
-The README serves as the primary entry point into a project.
+Build templates for the docs you write over and over. They save time and help everything look and feel consistent, whether it’s a README, an ADR, a test plan, bug report, or requirements doc.
 
----
+Documentation and AI
 
-# Architecture Decision Records (ADRs)
+AI should help make documentation better, not take the steering wheel.
 
-Significant engineering decisions should be documented using Architecture Decision Records.
+Let AI help you brainstorm, clarify your writing, find gaps, keep things organized, and check that you didn’t miss anything obvious.
 
-Each ADR should include:
+But the buck stops with you for making sure everything is right.
 
-* Context
-* Decision
-* Alternatives Considered
-* Rationale
-* Consequences
+Knowledge Management
 
-The purpose of an ADR is to preserve engineering reasoning rather than simply recording the final outcome.
+Organize what you know so anyone can find, grasp, and update it later.
 
-Future contributors should be able to understand why a decision was made even if they disagree with it.
+Focus on:
 
----
+Keeping a master source as often as possible
+Not copying the same info into different places
+Linking related docs instead of duplicating them
+Jotting down important reasoning while it’s still fresh in your mind
+Saving the decisions that matter most, so you—and others—can refer back
+If it’s not in the docs, it’s almost as good as lost.
 
-# Project Journals
+Documentation Lifecycle
 
-Project journals record the evolution of a project over time.
+Docs should live and grow with your project.
 
-Unlike ADRs, which capture individual decisions, project journals capture learning.
+Roughly, the workflow looks like this:
 
-Entries may include:
+Spot what needs documenting.
+Write a first draft.
+Tweak it as work happens.
+Review it for sense and accuracy.
+Update it when there’s a big change.
+Archive or combine docs you don’t need anymore.
+Docs are never “done.” They evolve as you do.
 
-* major milestones
-* design changes
-* lessons learned
-* unexpected discoveries
-* revised assumptions
-* future ideas
+Definition of Complete Documentation
 
-Project journals provide historical context that would otherwise disappear.
+You know your project is covered when someone new can answer:
 
----
+What problem is this trying to solve?
+Why did you pick this solution?
+How is everything structured?
+What assumptions did you build in?
+How should the work move forward?
+Where do I read more?
+If someone can’t answer these without chasing you down, your docs need work.
 
-# Templates
+Closing Thoughts
 
-Whenever practical, reusable templates should be created for recurring documentation.
+Most people treat documentation as a side dish. I see it as a core ingredient.
 
-Examples include:
+Good docs make communication smoother, lower uncertainty, store hard-won knowledge, and make teaming up a whole lot easier.
 
-* README
-* ADR
-* Project Journal
-* Test Plan
-* Test Cases
-* Bug Reports
-* Requirements Documents
+It’s not just about recording what you built. It’s about keeping understanding alive.
 
-Templates improve consistency while reducing unnecessary effort.
+Chapter Information
 
----
-
-# Documentation and AI
-
-AI-assisted documentation should support—not replace—engineering judgment.
-
-AI is particularly valuable for:
-
-* organizing ideas,
-* improving clarity,
-* identifying inconsistencies,
-* suggesting missing information,
-* reviewing documentation for completeness,
-* and helping maintain consistency across repositories.
-
-Final responsibility for technical accuracy remains with the engineer.
-
----
-
-# Knowledge Management
-
-Engineering knowledge should be organized so that it can be easily found, understood, and maintained.
-
-General principles include:
-
-* Maintain a single authoritative source whenever practical.
-* Avoid duplicating information across repositories.
-* Link related documents instead of copying content.
-* Record important reasoning while it is still fresh.
-* Preserve significant decisions for future reference.
-
-Knowledge that is not documented is easily lost.
-
----
-
-# Documentation Lifecycle
-
-Documentation should evolve alongside engineering work.
-
-The general lifecycle is:
-
-1. Identify the need for documentation.
-2. Create an initial draft.
-3. Refine through project work.
-4. Review for clarity and accuracy.
-5. Update when significant changes occur.
-6. Archive or consolidate outdated material when appropriate.
-
-Documentation is never truly finished.
-
-It matures with the project.
-
----
-
-# Definition of Complete Documentation
-
-A project should be considered well documented when another engineer can reasonably answer:
-
-* What problem is being solved?
-* Why was this solution chosen?
-* How is the project organized?
-* What assumptions were made?
-* How should future work continue?
-* Where can additional information be found?
-
-If those questions cannot be answered without asking the original author, the documentation can likely be improved.
-
----
-
-# Closing Thoughts
-
-Documentation is often viewed as supporting software.
-
-I view documentation as part of the software itself.
-
-Thoughtful documentation improves communication, reduces uncertainty, preserves engineering knowledge, and enables future collaboration.
-
-The objective is not simply to record what was built.
-
-The objective is to preserve understanding.
-
----
-
-## Chapter Information
-
-**Version**
+Version
 
 1.0.0
 
-**Status**
+Status
 
 Draft
 
----
+Revision History
 
-## Revision History
-
-| Version | Description |
-|----------|-------------|
-| 1.0.0 | Initial chapter |
+Version  |  Description
+1.0.0      Initial chapter
