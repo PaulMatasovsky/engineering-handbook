@@ -1,20 +1,12 @@
-# Chapter 03 — Engineering Standards
+Chapter 03 — Engineering Standards
 
-## Overview
+Overview
 
-Engineering standards provide consistency across projects.
+Engineering standards bring much-needed consistency to projects. Even as tools and requirements change, sticking to the same standards makes software easier to maintain, improves how people communicate, keeps documentation clear, and just raises the bar for quality. The guidelines laid out here set the baseline for how projects should run—and they’re meant to shape all future work, too.
 
-While technologies and requirements evolve, consistent standards improve maintainability, communication, documentation, and overall software quality.
+Engineering Workflow
 
-The standards defined in this chapter establish the minimum expectations for projects developed as part of this handbook and serve as the foundation for future work.
-
----
-
-# Engineering Workflow
-
-Every project should follow a deliberate progression.
-
-Rather than moving directly from an idea to implementation, work should proceed through the following stages:
+Every project works better with a clear path. Don’t just jump from idea straight to code. There’s a process:
 
 1. Understand
 2. Design
@@ -22,264 +14,193 @@ Rather than moving directly from an idea to implementation, work should proceed 
 4. Verify
 5. Improve
 
-Each stage produces information that informs the next.
+Each step builds off the last. If you skip ahead, you just complicate things for yourself down the line.
 
-Skipping earlier stages often creates unnecessary complexity later.
+The flow looks like this:
+Understand → Design → Document → Build → Verify → Reflect → Improve
 
-Understand
-      │
-      ▼
-Design
-      │
-      ▼
-Document
-      │
-      ▼
-Build
-      │
-      ▼
-Verify
-      │
-      ▼
-Reflect
-      │
-      ▼
-Improve
+Stage 1 — Understand
 
----
+Start by getting a clear picture of what you’re tackling.
 
-## Stage 1 — Understand
+- Spell out the problem.
+- Figure out who cares about or is affected by it.
+- Know the business terms that matter.
+- List any assumptions.
+- Write down all questions you still have.
+- Set project goals.
+- Decide what success looks like.
 
-Before implementation begins:
+Get your questions on paper before hunting for solutions.
 
-* Define the problem.
-* Identify stakeholders.
-* Understand business terminology.
-* Identify assumptions.
-* Record unanswered questions.
-* Define project goals.
-* Determine success criteria.
+Stage 2 — Design
 
-Questions should be documented before solutions are proposed.
+Keep things simple. Focus on making the next stage (building!) as pain-free as possible.
 
----
+- Check out different architectures.
+- Draw boundaries around your system.
+- Organize your repos.
+- Set naming rules.
+- Note what documentation you’ll need.
+- Log important decisions as ADRs.
+- Make your system easy to update before you worry about speed.
 
-## Stage 2 — Design
+Stage 3 — Build
 
-Design should simplify implementation.
+As you start building, stick to what you’ve planned and documented.
 
-During this stage:
+- Make your code easy to read.
+- Write code others can maintain.
+- Break things into modules.
+- Stay consistent.
 
-* Evaluate architectural options.
-* Define system boundaries.
-* Organize repositories.
-* Establish naming conventions.
-* Identify documentation requirements.
-* Record significant decisions as ADRs.
-* Design for maintainability before optimization.
+Take it one step at a time—small changes are way easier to review and manage than huge overhauls.
 
----
+Stage 4 — Verify
 
-## Stage 3 — Build
+Testing is just the beginning. Make sure what you’ve built actually meets the original needs.
 
-Implementation should remain consistent with documented decisions.
+- Validate requirements.
+- Do exploratory and smoke tests.
+- Run regression tests.
+- Review the docs.
+- Test usability.
+- Take a look at the architecture.
 
-Code should prioritize:
+The point is to confirm you really solved the problem you started with.
 
-* readability
-* maintainability
-* modularity
-* consistency
+Stage 5 — Improve
 
-Projects should evolve incrementally.
+Don’t just call it a day when you’re “done.” Every finished project should leave you smarter than before.
 
-Large changes are easier to manage when divided into smaller, reviewable improvements.
+- Write down lessons learned.
+- Update project journals.
+- Polish up documentation.
+- Fix templates.
+- Tune engineering standards.
+- Spot future project ideas.
 
----
+Improvement isn’t optional—it’s just how things go forward.
 
-## Stage 4 — Verify
+Documentation Standards
 
-Verification extends beyond testing.
+Documentation should grow with the code—it’s not optional or an afterthought.
 
-Verification includes:
+Every important project needs:
 
-* requirements validation
-* exploratory testing
-* smoke testing
-* regression testing
-* documentation review
-* usability review
-* architecture review
+- A README
+- Project journal
+- Architecture docs
+- Roadmap
+- Architecture Decision Records (ADRs)
+- Testing docs
+- Setup instructions
+- Ideas for future changes
 
-The objective is to confirm that the implemented solution satisfies the original problem.
+Make sure your docs explain what you built and why you built it that way.
 
----
+Repository Standards
 
-## Stage 5 — Improve
+Keep your repos organized and consistent.
 
-Every completed project should produce new knowledge.
+At a minimum, include:
 
-After significant milestones:
+- A clear README
+- The right license
+- Well-organized folders
+- Docs directory (if you need it)
+- Clean commit history
 
-* document lessons learned,
-* update project journals,
-* revise documentation,
-* improve templates,
-* refine engineering standards,
-* identify future opportunities.
+Think long-term—organize now for future maintenance, not just what’s fastest today.
 
-Continuous improvement is an expected outcome rather than an optional activity.
+Naming Standards
 
----
+Consistency helps everyone read and understand code faster.
 
-# Documentation Standards
+Stick to these basics:
 
-Documentation should exist alongside implementation.
+- All repository names in lowercase
+- Use hyphens for repo names
+- Pick filenames that actually describe what’s inside
+- Give variables real meaning—don’t be vague
+- Use clear terms from your domain
 
-Every significant project should include, when appropriate:
+Good names show intent, not just how something works inside.
 
-* README
-* project journal
-* architecture documentation
-* roadmap
-* Architecture Decision Records (ADRs)
-* testing documentation
-* setup instructions
-* future enhancements
+Decision Standards
 
-Documentation should explain both *what* was built and *why* it was built that way.
+Record big technical decisions so others can follow your logic.
 
----
+Every major decision needs:
 
-# Repository Standards
+- Context
+- The decision itself
+- Alternatives you considered
+- Why you chose what you did
+- What you expect as a result
 
-Repositories should present a consistent structure whenever practical.
+ADRs are the standard way to keep track of this info.
 
-At a minimum, repositories should include:
+Quality Standards
 
-* descriptive README
-* appropriate licensing
-* meaningful folder organization
-* documentation directory (if needed)
-* clear commit history
+Aim for high quality throughout—not just at the end.
 
-Projects should be organized for future maintainability rather than immediate convenience.
+Hold every project to these standards:
 
----
+- Correctness
+- Maintainability
+- Simplicity
+- Consistency
+- Traceability
+- Reproducibility
+- Clear docs
 
-# Naming Standards
+Test what you’ve documented, not what you assume.
 
-Consistency improves readability.
+AI Collaboration Standards
 
-General conventions:
+AI should make your work smoother, not take over decision-making.
 
-* lowercase repository names
-* hyphen-separated repository names
-* descriptive filenames
-* meaningful variable names
-* explicit terminology
-* consistent domain language
+Use AI for:
 
-Names should communicate intent rather than implementation.
+- Reviewing docs
+- Spotting inconsistencies
+- Explaining new stuff
+- Creating first drafts
+- Suggesting tweaks
+- Reviewing architecture
+- Helping with repetitive bits
 
----
+But keep all big engineering calls in human hands.
 
-# Decision Standards
+Definition of Done
 
-Important technical decisions should be documented.
+A project milestone isn’t finished until:
 
-Each significant decision should record:
+- It meets all requirements
+- Docs are updated
+- You’ve recorded important decisions
+- You’ve completed testing
+- Known issues are documented
+- Future improvements are listed where they make sense
 
-* context,
-* decision,
-* alternatives considered,
-* reasoning,
-* expected consequences.
+You’re not done until you’ve documented everything—not just delivered code.
 
-Architecture Decision Records (ADRs) provide the preferred mechanism for preserving this information.
+Continuous Refinement
 
----
+Standards aren’t carved in stone. As you learn and discover better ways, update the handbook. Consistency matters, but don’t stick with something just because “that’s how we do it.” Let standards grow as your team does.
 
-# Quality Standards
+Chapter Information
 
-Quality expectations apply throughout development.
-
-Every project should strive for:
-
-* correctness,
-* maintainability,
-* simplicity,
-* consistency,
-* traceability,
-* reproducibility,
-* clear documentation.
-
-Testing should verify documented expectations rather than undefined assumptions.
-
----
-
-# AI Collaboration Standards
-
-AI should support—not replace—engineering judgment.
-
-Preferred AI responsibilities include:
-
-* reviewing documentation,
-* identifying inconsistencies,
-* explaining unfamiliar concepts,
-* generating initial drafts,
-* suggesting improvements,
-* reviewing architecture,
-* assisting with repetitive tasks.
-
-Important engineering decisions should remain subject to human review.
-
----
-
-# Definition of Done
-
-A project milestone should not be considered complete until:
-
-* requirements are satisfied,
-* documentation is current,
-* significant decisions are recorded,
-* testing has been completed,
-* known limitations are documented,
-* future work is identified where appropriate.
-
-Completion includes documentation, not merely implementation.
-
----
-
-# Continuous Refinement
-
-These standards are expected to evolve.
-
-As better practices are discovered through experience, the handbook should be updated to reflect those improvements.
-
-Consistency is important.
-
-Blind adherence to outdated standards is not.
-
-Engineering standards should mature alongside engineering experience.
-
----
-
-## Chapter Information
-
-**Version**
+Version
 
 1.0.0
 
-**Status**
+Status
 
 Draft
 
----
+Revision History
 
-## Revision History
-
-| Version | Description |
-|----------|-------------|
-| 1.0.0 | Initial chapter |
-
+Version Description
+1.0.0 Initial chapter
