@@ -1,386 +1,306 @@
-# Chapter 06 — Engineering Case Study: Personal Portfolio Website
+Chapter 06 — Engineering Case Study: Personal Portfolio Website
 
-## Executive Summary
+Executive Summary
 
-The Personal Portfolio Website is the foundational project of my professional portfolio.
+The Personal Portfolio Website kicks off my professional portfolio—it’s more than just a place to show my work. On the surface, it’s where I list my projects and technical background, but at its core, it shows how I tackle engineering problems.
 
-Although its visible purpose is to present projects and technical experience, its primary purpose is to demonstrate how I approach engineering problems.
+I didn’t treat this like some personal branding exercise. I approached it like any real engineering project. Every key choice came down to a few simple ideas: keep it straightforward, easy to maintain, well-documented, and valuable in the long run.
 
-Rather than treating the website as a marketing exercise, I approached it as a complete software engineering project. Every significant design decision was evaluated through the lenses of simplicity, maintainability, documentation, and long-term value.
+This website’s more than a showcase. It’s my first real, working example of the engineering philosophy talked about in this handbook.
 
-The website serves as both a professional portfolio and the first practical demonstration of the engineering philosophy described throughout this handbook.
+Problem Statement
 
-# Problem Statement
+A basic résumé lists what I’ve done, but it doesn’t say much about how I solve problems.
 
-A traditional résumé communicates experience, but it provides very little insight into how an engineer approaches problems.
+A lot of portfolios out there focus on tech stacks, finished projects, or flashy designs—they rarely explain what thinking led to those decisions.
 
-Many technical portfolios emphasize technologies, completed projects, or visual design while overlooking the reasoning that guided those decisions.
+I wanted something different: a portfolio that puts my engineering mindset front and center, not just a bunch of project screenshots.
 
-I wanted to create a portfolio that demonstrates engineering thinking rather than simply displaying technical artifacts.
+The real challenge? Building a site that explains not just “what” I’ve built but “how”—from documenting things properly to QA and always looking for ways to get better.
 
-The challenge was designing a website that communicates not only what I have built, but how I approach engineering, documentation, quality assurance, and continuous improvement.
+Why This Problem Matters
 
----
+Good software engineering isn’t just about writing code—it’s about solving problems thoughtfully.
 
-# Why This Problem Matters
+Hiring managers aren’t looking just for people with the right buzzwords. They care about how someone handles the unknown, communicates their decisions, and keeps leveling up their own skills.
 
-Software engineering is ultimately about solving problems thoughtfully.
+A portfolio that explains that decision-making process gives a much clearer picture of someone’s real potential.
 
-Hiring managers are not simply evaluating whether someone can write code; they are evaluating how that person approaches unfamiliar problems, communicates technical decisions, and continues improving over time.
+That’s why my site became more about clear engineering communication than marketing myself.
 
-A portfolio that explains engineering reasoning provides a much clearer picture of long-term potential than one that merely lists technologies or screenshots.
+Project Snapshot
 
-For that reason, the website became an engineering communication project rather than a marketing website.
+Item                       | Value
+-------------------------- | ---------------------------------------------------------------------------
+Project Type               | Professional Portfolio Website
+Status                     | Active Development
+Primary Goal               | Demonstrate engineering thinking, not just finished projects
+Platform                   | WordPress
+Theme                      | Divi
+Version Control            | Git & GitHub
+Primary Documentation      | Markdown
+Design Philosophy          | Shibumi
+Engineering Philosophy     | Domain-Driven Design & Quality-First Development
 
----
+Project Evolution
 
-# Project Snapshot
+This project started with a pretty big question:
 
-| Item                       | Value                                                                       |
-| -------------------------- | --------------------------------------------------------------------------- |
-| **Project Type**           | Professional Portfolio Website                                              |
-| **Status**                 | Active Development                                                          |
-| **Primary Goal**           | Demonstrate engineering thinking rather than simply showcase completed work |
-| **Platform**               | WordPress                                                                   |
-| **Theme**                  | Divi                                                                        |
-| **Version Control**        | Git & GitHub                                                                |
-| **Primary Documentation**  | Markdown                                                                    |
-| **Design Philosophy**      | Shibumi                                                                     |
-| **Engineering Philosophy** | Domain-Driven Design & Quality-First Development                            |
+What’s a professional software portfolio actually supposed to communicate?
 
----
+Most portfolios pile on the tech buzzwords, fancy layouts, and project lists. I wanted mine to do something else. I wanted visitors to see how I think.
 
-# Project Evolution
+That shaped everything. Instead of jumping straight into building pages, I stepped back and clarified: what’s this site even for? Who will use it? What engineering principles should guide every part of its design?
 
-The project began with a simple question:
+That approach turned my portfolio into just one part of a bigger “ecosystem”—GitHub repos, architecture records, journals, technical writing, and this handbook.
 
-**What should a professional software portfolio actually communicate?**
+Objectives
 
-Many portfolios emphasize technology stacks, visual design, or completed projects.
+Professional Objectives
 
-I wanted mine to communicate something different.
+- Make myself visible online in a professional way
+- Help with networking and job hunting
+- Give people access to my projects and technical writing
+- Show maturity as an engineer—beyond just a paper résumé
 
-I wanted visitors to understand how I think.
+Engineering Objectives
 
-That decision changed the entire direction of the project.
+- Apply Shibumi (minimalist) principles in web design
+- Use Domain-Driven Design for project planning
+- Put documentation first, before code
+- Build something maintainable, long-lasting
+- Use the website as a quality assurance (QA) showcase
 
-Instead of building pages first, I began defining the purpose of the website, identifying the intended audience, and documenting the engineering principles that would guide every design decision.
+Personal Objectives
 
-The website ultimately became one component of a larger engineering ecosystem that includes GitHub repositories, Architecture Decision Records, project journals, technical writing, and this Engineering Handbook.
+- Keep learning through real projects
+- Build a site that grows with my career, not just a snapshot in time
+- Develop engineering judgment, not just new skills
 
----
+Engineering Approach
 
-# Objectives
+I followed the workflow I’ve laid out earlier in this handbook.
 
-## Professional Objectives
+Understand
 
-* Establish a professional online presence.
-* Support networking and job applications.
-* Provide access to projects and technical writing.
-* Demonstrate engineering maturity beyond a résumé.
+Before touching any code or picking tools, I figured out:
 
-## Engineering Objectives
+- Who’s the audience?
+- What’s the purpose?
+- How’s the information organized?
+- What are the main engineering goals?
 
-* Apply Shibumi principles to web design.
-* Apply Domain-Driven Design concepts to project planning.
-* Demonstrate documentation-first engineering.
-* Build a maintainable website that evolves over time.
-* Use the website itself as a QA case study.
+I didn’t just want a website; I wanted to communicate the way I think as an engineer.
 
-## Personal Objectives
+Design
 
-* Continue learning through practical implementation.
-* Create a portfolio that grows alongside my career.
-* Develop engineering judgment rather than simply technical skills.
+I stuck to Shibumi—minimalism with a purpose.
 
----
+That means:
 
-# Engineering Approach
+- Simple, no-nonsense visuals
+- Limited color palette
+- Deliberate typography
+- Generous whitespace
+- Easy-to-follow navigation
+- Clear, straightforward content
 
-This project follows the engineering workflow established earlier in this handbook.
+Every part of the site needs a reason to be there.
 
-## Understand
+Build
 
-Before selecting technologies or creating pages, I defined:
+The site’s built on WordPress using Divi.
 
-* the audience,
-* the purpose,
-* the information architecture,
-* and the overall engineering goals.
+I picked a solid, mature platform so I wouldn’t waste time reinventing stuff that’s already solved. That way, I could focus on:
 
-The objective was not simply to build a website, but to communicate engineering thinking.
+- Documentation
+- Quality Assurance
+- Architecture
+- Portfolio content
+- Continuous improvement
 
----
+Verify
 
-## Design
+The website is my first big test-run for formal QA.
 
-The interface follows the principles of Shibumi.
+Testing covers:
 
-This includes:
+- Smoke tests
+- Regression checks
+- Navigation
+- Responsiveness (looks good on any device)
+- Accessibility
+- Form validation
+- Cross-browser compatibility
+- Reviewing documentation
 
-* restrained visual design,
-* limited color palette,
-* purposeful typography,
-* generous whitespace,
-* intuitive navigation,
-* and content that emphasizes clarity over decoration.
+Improve
 
-Every element should have a reason to exist.
+The website isn’t ever fully “done.”
 
----
+It’s a living portfolio that grows and changes as I do.
 
-## Build
+Architecture
 
-The project uses WordPress with the Divi theme.
+The site’s the main hub for a bigger engineering ecosystem.
 
-This decision intentionally prioritized engineering value over rebuilding solved problems.
+From there, visitors can find:
 
-Using a mature platform allows more time to be invested in:
+- The Engineering Handbook
+- GitHub repos
+- A QA Toolkit
+- Technical blog (Insights)
+- Project docs
+- Architecture Decision Records (ADRs)
+- Future interactive demos
 
-* documentation,
-* QA,
-* architecture,
-* portfolio projects,
-* and continuous improvement.
+The site introduces my projects. The technical deep dives live in GitHub.
 
----
+Key Design Decisions
 
-## Verify
+WordPress + Divi
 
-The website itself serves as the first project subjected to formal QA planning.
+Instead of writing my own framework just to show off programming chops, I chose something stable. The key is to direct my energy where it does the most good.
 
-Verification includes:
+Use the right tool for the job.
 
-* smoke testing,
-* regression testing,
-* navigation validation,
-* responsive design testing,
-* accessibility review,
-* form validation,
-* cross-browser testing,
-* and documentation review.
+Shibumi
 
----
+Minimalism isn’t just about looks. It’s an engineering choice.
 
-## Improve
+Less clutter—more communication.
 
-The website is intentionally iterative.
+Documentation First
 
-Rather than pursuing a "finished" website, the goal is to maintain a living portfolio that evolves alongside my professional development.
+Docs are part of the product, not an afterthought.
 
----
+With the Engineering Handbook, ADRs, journals, and repos, people get the whole story—not just the code.
 
-# Architecture
+AI Collaboration
 
-The website serves as the public entry point into a larger engineering ecosystem.
+I use AI every step of the way for planning, writing, architecture discussions, improving content—it helps. But ultimately the judgment call is mine.
 
-It connects visitors to:
+Challenges
 
-* Engineering Handbook
-* GitHub repositories
-* QA Toolkit
-* Technical blog (Insights)
-* Project documentation
-* Architecture Decision Records
-* Future interactive software demonstrations
+Biggest challenges?
 
-The website introduces projects while GitHub contains implementation details.
+- Figuring out what a portfolio should even do
+- Keeping it simple while adding enough technical depth
+- Handling docs across several repos
+- Keeping everything consistent as the project evolves
+- Making sure it shows my engineering mindset, not just a stack of tech buzzwords
 
-Engineering Handbook
-        │
-        ├────────────┐
-        │            │
-        ▼            ▼
-Portfolio Repo    QA Toolkit
-        │
-        ▼
-Blog / Insights
-        │
-        ▼
-Visitors
+Facing these really hammered home—plan thoroughly before jumping in.
 
----
+Quality Assurance
 
-# Key Design Decisions
+QA is built in, not bolted on at the end.
 
-## WordPress + Divi
+This was the proving ground for my own QA methods.
 
-Rather than creating a custom framework solely to demonstrate programming ability, I selected a mature platform that allows engineering effort to be focused where it creates the greatest value.
+Tests planned:
 
-This reflects an important engineering principle:
+- Smoke and regression
+- Exploratory
+- Accessibility
+- Responsiveness
+- Cross-browser
+- Docs review
 
-**Use the right tool for the problem.**
+AI Collaboration
 
----
+AI jumps in everywhere:
 
-## Shibumi
+- Reviewing architecture
+- Drafting documentation
+- Helping brainstorm
+- Sharpening design choices
+- Catching inconsistencies
+- Challenging old assumptions
 
-Minimalism was selected as an engineering principle rather than simply an artistic preference.
+It boosts my workflow, but all final calls are mine.
 
-Every page should communicate more by showing less.
+Outcomes
 
----
+The project has already given me:
 
-## Documentation First
+- A strong, professional online presence
+- Workflow that starts with documentation, not code
+- A well-structured world of GitHub projects
+- A repeatable, reliable engineering process
+- A solid base for all future portfolio work
+- A public, visible record of never-ending learning
 
-Documentation is treated as part of the product.
+Lessons Learned
 
-The Engineering Handbook, ADRs, project journals, and repositories provide context that source code alone cannot.
+Big takeaways:
 
----
+- Nail down the problem first—solutions come easy after that
+- Simplicity takes focus and resolve
+- Documentation lifts quality
+- Small, steady steps beat giant overhauls
+- AI works best as a creative sidekick, not a replacement
+- Quality matters at every stage, starting from day one
 
-## AI Collaboration
+Engineering Decisions That Changed
 
-Artificial Intelligence is intentionally used throughout planning, documentation, architecture discussions, and content refinement.
+A few decisions totally changed direction:
 
-Engineering judgment remains a human responsibility.
+- Switched from Kadence to Divi
+- Chose WordPress over building something custom
+- Shifted focus from marketing to engineering thinking
+- Added the Engineering Handbook
+- Moved most docs to GitHub
 
----
+Future Roadmap
 
-# Challenges
+Coming up:
 
-Significant challenges included:
+- More real-world engineering case studies
+- A hands-on inventory management demo
+- Expanded QA Toolkit
+- AI-powered assistant for the portfolio
+- More technical articles
+- Ongoing refinement of docs and processes
+- Better accessibility and performance
 
-* Defining the true purpose of a professional portfolio.
-* Balancing simplicity with sufficient technical depth.
-* Organizing documentation across multiple repositories.
-* Maintaining consistency while the project continues to evolve.
-* Ensuring the portfolio reflects engineering thinking rather than technology lists.
+This website keeps growing as my career does.
 
-Each challenge reinforced the importance of deliberate planning before implementation.
+Related Documentation
 
----
+Related Handbook Chapters
 
-# Quality Assurance
+- Chapter 02 — Engineering Philosophy
+- Chapter 03 — Engineering Standards
+- Chapter 05 — Documentation & Knowledge Management
 
-Quality Assurance is integrated into the project rather than added after development.
+Related Repositories
 
-The website serves as the first implementation of my evolving QA methodology.
+- engineering-handbook
+- paul-portfolio-website
+- qa-toolkit
+- inventory-management-project (planned)
 
-Planned testing includes:
+Supporting Documentation
 
-* Smoke testing
-* Regression testing
-* Exploratory testing
-* Accessibility testing
-* Responsive design verification
-* Cross-browser compatibility
-* Documentation review
+- Architecture Decision Records
+- Project Journal
+- README
+- Planned Test Plan
+- Planned Test Cases
 
----
+Chapter Information
 
-# AI Collaboration
-
-AI contributes throughout development by assisting with:
-
-* architecture reviews,
-* documentation,
-* brainstorming,
-* engineering discussions,
-* design refinement,
-* identifying inconsistencies,
-* and challenging assumptions.
-
-AI accelerates engineering work while final technical decisions remain my responsibility.
-
----
-
-# Outcomes
-
-The project has established:
-
-* A professional online presence.
-* A documentation-first engineering workflow.
-* A structured GitHub ecosystem.
-* A repeatable engineering process.
-* A foundation for future portfolio projects.
-* A public demonstration of continuous learning.
-
----
-
-# Lessons Learned
-
-Key lessons include:
-
-* Understanding the problem simplifies implementation.
-* Simplicity requires discipline.
-* Documentation improves engineering quality.
-* Small iterative improvements outperform large redesigns.
-* AI is most valuable as a collaborative engineering partner.
-* Quality should influence every stage of software development.
-
----
-
-# Engineering Decisions That Changed
-
-This section records decisions that significantly redirected the project.
-
-Examples:
-
-* Switching from Kadence to Divi
-* Choosing WordPress instead of a custom framework
-* Centering the website on engineering thinking rather than marketing
-* Creating the Engineering Handbook
-* Moving documentation into GitHub
-
----
-
-# Future Roadmap
-
-Planned enhancements include:
-
-* Additional engineering case studies.
-* Interactive inventory management demonstration.
-* Expanded QA Toolkit.
-* AI-powered portfolio assistant.
-* Additional technical articles.
-* Continued refinement of engineering documentation.
-* Enhanced accessibility and performance optimization.
-
-The website will continue evolving alongside my professional career.
-
----
-
-# Related Documentation
-
-## Related Handbook Chapters
-
-* Chapter 02 — Engineering Philosophy
-* Chapter 03 — Engineering Standards
-* Chapter 05 — Documentation & Knowledge Management
-
-## Related Repositories
-
-* engineering-handbook
-* paul-portfolio-website
-* qa-toolkit
-* inventory-management-project *(planned)*
-
-## Supporting Documentation
-
-* Architecture Decision Records
-* Project Journal
-* README
-* Future Test Plan
-* Future Test Cases
-
----
-
-## Chapter Information
-
-**Version**
+Version
 
 1.0.0
 
-**Status**
+Status
 
 Draft
 
----
+Revision History
 
-## Revision History
-
-| Version | Description |
-|----------|-------------|
-| 1.0.0 | Initial chapter |
-
+Version | Description
+--------|-----------------
+1.0.0   | Initial chapter
